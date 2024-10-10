@@ -1,0 +1,489 @@
+@charset "utf-8";
+
+/* reset */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-family: "돋움";
+    font-size: 14px;
+    color: #333;
+    line-height: 1em;
+}
+
+a {
+    font-family: "돋움";
+    font-size: 0.9em;
+    /* 14px * 0.9 = 12.6px */
+    color: #333;
+    text-decoration: none;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.blind{
+    position: absolute;
+    left: -99999%;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    overflow: hidden;
+    font-size: 0;
+    text-indent: -99999%;
+}
+.h2{
+    font-size: 2em;
+    margin-bottom: 20px;      
+}
+.h3{
+    font-size: 1.5em;
+    background: url(bul_h4.gif) no-repeat 0 0;
+    padding-top: 10px;
+    margin-bottom: 20px;    
+}
+.h4{
+    background: url(bul_h5.gif) no-repeat 0 50%;
+    text-indent: 10px;
+    margin-bottom: 20px;
+}
+.p_title{
+    font-size: 0.8em;
+    color: #777;
+}
+.strong_title{
+    font-weight: normal;
+    color: #ed1c24;
+}
+.data_t{
+    border-top: 2px solid #000; 
+    margin-bottom: 20px;        
+}
+.data_th_td{
+    border: 1px solid #e5e5e5;
+    padding: 12px 0;
+}
+.data_th{
+    background: #4e4e4e;
+    color: #e3ffff;    
+    font-size: 0.9em; 
+    font-weight: normal;
+}
+.data_td{
+    font-size: 0.8em;
+    padding-left: 6px; 
+}
+.font_s1{
+    font-size: 12px;
+    color: #585858;
+    line-height: 1.5;
+}
+.box_s1{
+    padding: 24px 10px;
+    background: #f6f6f6;
+    color: #585858;
+    border: 1px solid #e5e5e5;
+}
+.caption_s1{
+    color: #666694;
+    text-align: left;
+    font-weight: bold;
+}
+.m_b10{
+    margin-bottom: 10px;
+}
+.m_b20{
+    margin-bottom: 20px;
+}
+.m_b30{
+    margin-bottom: 30px;
+}
+.m_b40{
+    margin-bottom: 40px;
+}
+.m_b50{
+    margin-bottom: 50px;
+}
+.font_d8{
+    font-size: 0.8rem;
+}
+.font_d9{
+    font-size: 0.9rem;
+}
+.font_d10{
+    font-size: 1rem;
+}
+.font_d11{
+    font-size: 1.1rem;
+}
+.font_d12{
+    font-size: 1.2rem;
+}
+.font_d13{
+    font-size: 1.3rem;
+}
+.font_d14{
+    font-size: 1.4rem;
+}
+.font_d15{
+    font-size: 1.5rem;
+}
+.font_d20{
+    font-size: 2rem;
+}
+.width_s10{
+    width: 10%;
+}
+.width_s20{
+    width: 20%;
+}
+.width_s30{
+    width: 30%;
+}
+.width_s40{
+    width: 40%;
+}
+.width_s50{
+    width: 50%;
+}
+.width_s60{
+    width: 60%;
+}
+.width_s70{
+    width: 70%;
+}
+.width_s80{
+    width: 80%;
+}
+.width_s90{
+    width: 90%;
+}
+.width_s100{
+    width: 100%;
+}
+
+
+
+
+/* layout */
+
+header {
+    height: 70px;
+    position: relative;
+}
+
+header h1 {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -72px;
+}
+
+header .m_menu {
+    float: left;
+    width: 70px;
+    height: 70px;
+    background: red;
+}
+
+header .m_menu a {
+    display: block;
+    height: 70px;
+    text-indent: -99999%;
+    overflow: hidden;
+    background: url(m_btn_allmenu.jpg) no-repeat 0 0;
+}
+
+header .m_menu a.on {
+    background-position: -70px 0;
+}
+
+header .search {
+    float: right;
+}
+header .search img{
+    vertical-align: top;
+}
+header .all_menu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80%;
+    background: #fff;
+    border: 1px solid #ccc;
+    z-index: 300;
+    display: none;
+}
+
+header .all_menu dl {
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+}
+
+header .all_menu dl dt {
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-bottom: 2px solid #686868;
+}
+
+header .all_menu .all_1 dt {
+    position: relative;
+}
+
+header .all_menu .all_1 dd {
+    float: left;
+    width: 20%;
+}
+
+header .all_menu dl dt .close {
+    display: inline-block;
+    background: #eee;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    line-height: 25px;
+    color: #999;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -12px;
+}
+
+header .all_menu dl dd a {
+    display: block;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+
+header .all_menu dl dd:nth-child(2n) a {
+    background: #f6f6f6;
+}
+
+header .all_menu .all_2 dd {
+    float: left;
+    width: 33.33%;
+}
+
+.search_box {
+    display: none;
+}
+
+.search_box .search_b_t {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.search_box .search_b_w {
+    position: relative;
+}
+
+.search_box .search_b_t .title {
+    background: url(m_icon_search1.jpg) no-repeat 0 0;
+    padding-left: 40px;
+    height: 37px;
+    line-height: 37px;
+    font-size: 1.2em;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.search_box .search_b_t .input_w {
+    margin-left: 112px;
+    margin-right: 37px;
+}
+
+.search_box .search_b_t .input_w input {
+    width: 100%;
+    height: 35px;
+    border: 1px solid #ccc;
+    padding: 0 10px;
+}
+
+.search_box .search_b_t .input_bt {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.search_box .search_b_b {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.search_box .search_b_b .search_b_w {
+    position: relative;
+}
+
+.search_box .search_b_b .search_b_w .title {
+    background: url(m_icon_search2.jpg) no-repeat 0 0;
+    padding-left: 40px;
+    height: 37px;
+    line-height: 37px;
+    font-size: 1.2em;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.search_box .search_b_b .search_b_w .search_b_r {
+    margin-left: 112px;
+}
+
+.search_box .search_b_b .search_b_w .search_b_r .input_w {
+    margin-right: 37px;
+    background: #ff6600
+}
+
+.search_box .search_b_b .search_b_w .search_b_r .input_w input {
+    width: 50%;
+    height: 37px;
+    border: 1px solid #ccc;
+    box-sizing: border-box
+}
+
+.search_box .search_b_b .search_b_w .search_b_r form {
+    position: relative;
+}
+
+.search_box .search_b_b .search_b_w .search_b_r .input_bt {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.search_box .search_b_b .search_b_w .search_b_r p {
+    margin-bottom: 10px;
+}
+
+.search_box .search_b_b .search_b_w .search_b_r p span {
+    color: #ff0000;
+}
+
+.search_box .search_b_c {
+    padding: 10px;
+    text-align: right;
+}
+
+.search_box .search_b_c button {
+    display: inline-block;
+    width: 87px;
+    height: 38px;
+    background: url(m_btn_close.gif) no-repeat 0 0;
+    text-indent: -99999%;
+    overflow: hidden;
+    position: relative;
+    border: 0
+}
+.b_nav ul {
+    overflow: hidden;
+}
+.b_nav ul li {
+    width: 50%;
+    float: left;
+    background: #525252;
+    text-align: center;
+}
+
+.b_nav ul li a {
+    display: block;
+    padding: 12px 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+.b_nav ul li .bor1 {
+    border-right: 1px solid #424242;
+    border-bottom: 1px solid #424242;
+}
+
+.b_nav ul li .bor2 {
+    border-left: 1px solid #757575;
+    border-bottom: 1px solid #424242;
+}
+
+.b_nav ul li .bor3 {
+    border-top: 1px solid #757575;
+    border-right: 1px solid #424242;
+}
+
+.b_nav ul li .bor4 {
+    border-top: 1px solid #757575;
+    border-left: 1px solid #757575;
+}
+
+.b_nav ul li a.on {
+    color: #da1262;
+}
+.site_m{
+    position: relative;
+}
+.site_m .site_w h2{
+    background: #ed1c24;
+    text-indent: 30px;
+}
+.site_m .site_w{
+    position: relative;
+}
+.site_m .site_w ul{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: -188px; /* 47*4 = 188 */   
+    background: #ff0000;
+    display: none;
+    z-index: 200;
+}
+.site_m .site_w ul.on{
+    display: block;
+}
+.site_m .site_w ul li a{
+    display: block;
+    height: 47px;
+    line-height: 47px;
+    color: #fff;
+    border-bottom: 1px solid #f33a3f;
+    text-indent: 30px;
+}
+.site_m .site_t{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.site_m img{
+    vertical-align: top;
+}
+
+footer .footer_b{
+    padding: 14px;
+}
+footer .footer_b address{
+    font-style: normal;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+footer .footer_b address span{
+    display: inline-block;
+    padding-right: 20px;
+    padding-bottom: 8px;
+}
+footer .footer_b .copyright{
+    font-size: 0.8em;
+    margin-bottom: 10px;
+}
+footer .footer_b .footer_txt{
+    font-size: 0.9em;
+    letter-spacing: -1px;
+    color: #333;
+}

@@ -1,0 +1,345 @@
+@charset "utf-8";
+
+.visual {
+    position: relative;
+}
+
+.visual .swiper-wrapper img{
+    width: 100%;
+}
+.visual .control {
+    position: absolute;
+    height: 15px;
+    left: 46%;
+    bottom: 5%;
+}
+
+.visual .control .c_1{
+    display: inline-block;
+    width:10px;
+    height: 10px;
+    border-radius: 10px;
+    border: 2px solid #f14112;
+    background: rgb(255, 1, 191);
+    background: -moz-linear-gradient(top, rgb(255, 191, 191) 0%, rgb(100, 0, 0) 72%);
+    background: -webkit-linear-gradient(top, rgb(3, 191, 191) 0%, rgb(209, 0, 3) 72%);
+    background: linear-gradient(to bottom, rgb(255, 191, 11) 5%, rgb(600, 0, 0) 72%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffbfbf', endColorstr='#d10000', GradientType=0);
+    text-indent: -99999%;
+    overflow: hidden;
+    margin: 0 2px;
+}
+.visual .control .c_2{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background: #999;
+    border: 2px solid #999;
+    text-indent: -99999%;
+    overflow: hidden;
+    margin: 0 2px;
+}
+
+.Content .Productlist {
+    width: 100%;
+    padding-top: 15px;
+    
+    
+    
+}
+.Productlist .list_bt ul{
+    position: relative;
+    height:70px;
+    width: 100%;
+    
+
+}
+.list_bt ul li.on{
+    background: #000;
+}
+
+.Productlist .list_bt ul li{
+    position: absolute;
+    display:inline-block;
+    background: #fff;
+    height: 34px;
+    line-height: 34px;
+    width:136px;    
+    text-align: center;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+    
+}
+
+.Productlist .list_bt ul li:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 50%
+}
+.Productlist .list_bt ul li:nth-child(2){
+    top: 0;
+    right: 0;
+    width: 50%
+}
+.Productlist .list_bt ul li:nth-child(3){
+    top:35px;
+    left:0px;
+    width: 50%
+}
+.Productlist .list_bt ul li:nth-child(4){
+    top:35px;
+    right:0;
+    width: 50%
+}
+
+
+
+.Productlist .Nudeel_list{
+    margin-top:10px; 
+    margin-bottom: 20px; 
+ 
+}
+.Productlist .Nudeel_list ul{
+    overflow: hidden;
+}
+.Nudeel_list ul li a img{
+    width: 100%;
+    border: 3px solid #fff;
+
+    
+}
+.Nudeel_list ul li{
+    display: block;
+    width: 50%;
+    float: left;
+
+       
+}
+.Nudeel_list ul li p{
+    background: #fff;
+    text-align: center;
+    padding-top: 5px;
+    font-weight: bold;
+    color: #3d3d3d;
+    font-size: 13px;
+}
+.Nudeel_list ul li span{
+background: #fff;
+    text-align: center;
+    padding-left: 5px;
+    display: block;
+    height: 40px;
+    padding-top: 3px;
+    line-height: 20px;
+    margin-bottom: 20px;
+        
+}
+
+
+
+.event_banner .e_banner_bg img{
+width: 100%;
+}
+
+.Notice{
+    width: 100%;
+    position: relative;
+
+
+}
+.Notice .N_News{
+width: 100%;
+    overflow: hidden;
+}
+
+.Notice .N_News .N_News_titet{
+    padding: 5px 0 ;
+    padding-left: 10px;
+    height: 16px;
+     border-bottom: 1px solid #e94e33;
+    margin-bottom: 15px;
+    width: 100%;
+}
+.Notice .N_News .N_News_titet h2{
+    width:20%;
+    position: absolute;
+    left:5px;
+    top: 3px;
+    border-bottom: 3px solid #e94e33;
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold
+
+}
+
+.Notice .N_News .N_News_titet span img{
+    width: 120%;
+}
+.Notice .N_News .N_News_titet span{
+ margin-right: 9px;
+ padding: 3px;
+position: absolute;
+    top: 3px;
+    right: 5px;
+    
+}
+.Notice .N_News .N_inpo{
+    position: relative;
+}
+
+.Notice .N_News .N_inpo img{
+    width:100%;
+    display: block;
+    margin-bottom: 5px;
+
+
+  
+}
+.Notice .N_News .N_inpo h3{
+    float: left;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 20px;
+
+}
+
+.Notice .N_News .N_inpo p{
+   display: block;
+    float: right;
+    width:100%;
+    text-align: center;
+    margin-bottom: 20px;
+    
+
+}
+.Notice .N_News .N_inpo .c1{
+    color: #66a0ff;
+    font-weight: bold;
+    display:block;
+    text-align:center;
+    float:right;
+    width: 50%;
+    border-bottom: 1px solid #222;
+    margin-bottom: 30px;
+    
+
+
+}
+.Notice .N_News .N_inpo .c2{
+    color: #999;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    float: right;
+    width: 50%;
+     border-bottom: 1px solid #222;
+
+
+}
+
+.Notice .N_cf{
+  padding: 10px;
+}
+.Notice .N_cf .N_cf_titet{
+    position: relative;
+    padding: 5px 0 ;
+    height: 16px;
+     border-bottom: 1px solid #9bcf48;
+    margin-bottom: 15px;
+    width: 100%;
+    bottom:0px;
+}
+.Notice .N_cf .N_cf_titet h2{
+    width: 90px;
+    text-align: center;
+    border-bottom: 3px solid #9bcf48;
+    position: absolute;
+    left:5px;
+    top:2px;
+    font-size: 15px;
+    font-weight: bold;
+        
+}
+.Notice .N_cf .N_cf_titet span img{
+    width: 120%;
+}
+.Notice .N_cf .N_cf_titet span{
+    position: absolute;
+    right: 5px;
+    top:0;
+    margin-right: 9px;
+ padding: 3px;
+}
+
+.new_banner .new_b_bg{
+margin-bottom: 20px;
+}
+.new_banner .new_b_bg img{
+    width: 100%;
+}
+.sns{
+    background: #eee;
+    position: relative;
+    padding-top: 20px
+    
+
+}
+.sns h3{
+    width: 50%;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    float: left;
+    background: #fff;
+    height:35px;
+    line-height: 35px;
+    
+  
+}
+.sns .sns_link{
+    width: 50%;
+    text-align: right;
+    background: #fff;
+    float: right;
+    height: 35px;
+
+}
+
+
+
+.sns .sns_news{
+    background: #eee;
+
+
+
+}
+.sns .sns_news .sns_news_bg img{
+width: 100%;
+    
+}
+
+
+.sns .sns_news .sns_news_inpo img{
+    position: absolute;
+    left: 5%;
+    top:85px;
+}
+
+.sns .sns_news .sns_news_inpo p{
+    position: absolute;
+    left:14px;
+    top:130px;
+   
+}
+.sns .sns_news .sns_news_inpo span{
+position: absolute;
+    top: 200px;
+    left: 14px;
+    color: #b5b8bf;
+}
+
+    
+
+

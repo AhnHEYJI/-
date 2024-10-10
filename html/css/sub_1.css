@@ -1,0 +1,329 @@
+@charset "utf-8";
+
+/*라면메인이미지공통*/
+
+.vis .v_bg {
+    overflow: hidden;
+}
+
+.vis img {
+    width: 100%;
+}
+
+
+/*sub1 */
+
+/*컨텐츠*/
+
+.contents .news_bar {
+    position: relative;
+    margin-bottom: 25px
+}
+
+.contents .news_bar .n_b_txt {
+    width: 100%;
+    height: 40px;
+}
+
+.contents .news_bar .n_b_txt h2 {
+    display: block;
+    width: 50%;
+    text-align: center;
+    height: 35px;
+    line-height: 35px;
+
+}
+
+.contents .news_bar .n_b_txt h2:nth-child(1) {
+    float: left;
+    border-bottom: 3px solid #ef3524;
+}
+
+.contents .news_bar .n_b_txt h2:nth-child(2) {
+    float: right;
+}
+
+.contents .news_con_t {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.contents .news_con_t h3 {
+    font-size: 17px;
+}
+
+.table {
+    padding: 5px 20px;
+
+}
+
+.table .data_t {
+    overflow: hidden;
+}
+
+.table .data_t thead th {
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+    text-align: center;
+
+
+
+}
+
+.table .data_t thead th:nth-child(1) {
+    width: 10%;
+}
+
+.table .data_t thead th:nth-child(2) {
+    width: 90%;
+}
+
+.table .data_t thead th:nth-child(3) {
+    width: 5%;
+}
+
+.table .data_t tbody tr {
+    height: 55px;
+
+}
+
+.table .data_t tbody tr td {
+    padding: 20px 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.control {
+    width: 100%;
+
+}
+
+.control .num {
+    position: relative;
+
+
+}
+
+
+.control .num .n_list {
+    overflow: hidden;
+
+    width: 50%;
+    height: 30px;
+
+}
+
+.control .num .n_list div {
+    float: left;
+    display: block;
+    width: 50%;
+    text-align: center;
+}
+
+.control .num .n_list div:nth-child(1) {
+    width: 15px;
+    top: 2px;
+    left: 95px;
+
+}
+
+.control .num .n_list div:nth-child(2) {
+    width: 15px;
+    top: 0;
+    left: 120px;
+
+}
+
+.control .num .n_list div:nth-child(3) {
+    width: 15px;
+    top: 0;
+    left: 140px;
+
+}
+
+.control .num .n_list div:nth-child(4) {
+    width: 15px;
+    top: 0;
+    right: 125px;
+}
+
+.control .num .n_list div:nth-child(5) {
+    width: 15px;
+    top: 0;
+    right: 100px
+}
+
+
+
+
+/*sub2 */
+
+/*컨텐츠*/
+
+.ceo_txt {
+    width: 100%;
+}
+
+.ceo_txt .c_t_icon {
+    width: 40px;
+    margin: 0 auto;
+    padding-top: 17px;
+    padding-bottom: 40px
+}
+
+.ceo_txt h2 {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.ceo_txt span {
+    color: #f03b2b;
+    font-weight: bold;
+}
+
+.ceo_bg {
+    position: relative;
+     overflow: hidden;
+    height:340px;
+     background: #f8f5f0;
+    
+
+}
+
+
+.ceo_bg img {
+    width: 100%;
+
+}
+
+.ceo_bg h4 {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    
+
+}
+
+/*sub3 C.I소개*/
+
+.warp .logo .r_bt {
+    float: left;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    background: #e22a20;
+    color: #fff;
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: 15px;
+    line-height: 20px;
+    margin-left: 20px;
+
+}
+
+.warp .logo{
+    padding: 30px 20px;
+    overflow: hidden;
+    text-align: center;
+}
+.warp .logo h2 {
+   width: 40px;
+    float: left;
+    padding-left: 10px;
+    font-size: 0.9vem;
+    display: inline-block;
+    color: #7f7671;
+ 
+    
+}
+.warp .logo .m{
+     width: 200px;
+    float: left;
+    padding-left: 10px;
+    font-size: 0.9vem;
+    display: inline-block;
+    color: #7f7671;
+}
+.warp .logo span{
+    color: #e6645c;
+    font-weight: bold;
+
+    width: 30%;
+    
+}
+.warp .logo p{
+   margin-left: 50px;
+    margin: 15px;
+}
+.warp .ci_bg{
+    width: 100%;
+}
+.warp .ci_bg img{
+    width: 60%;
+    margin-left: 20%
+}
+.warp .ci_bg_1 img{
+    width: 90%;
+    margin-left: 5%
+
+}
+.warp .ci_bg_2 img{
+    width: 40%;
+    margin-left: 30%
+
+}
+
+/*회원가입페이지*/
+
+#con_booydata  h2{
+    text-align: center;
+    font-size: 16px;
+    margin-top: 15px;
+}
+#con_booydata .m_c{
+    text-align: right;
+    color: #e22a20;
+     font-family: 'NanumBarunGothic', '나눔바른고딕', sans-serif;
+    font-size: 0.9em;
+    
+}
+#booydata{
+    padding: 15px;
+}
+#booydata label{
+    color: #999
+}
+#booydata tr strong{
+    color: #e22a20; 
+}
+#booydata #B_B{
+  width: 100%;
+    margin-top: 20px;
+}
+#booydata #B_B tr{
+    height:50px;
+   border: 1px solid #7f7671;
+   
+}
+#booydata tr th{
+  width: 40%;
+}
+#booydata #B_B tr td {
+    border-left: 1px solid #7f7671;
+    text-align: center;
+}
+
+#B_B .in input{
+  width: 40%;
+}
+#B_B .cell input{
+    width: 15%;
+}
+#B_B .t1 input{
+    width: 57%;
+}
+#PP{
+    text-align: center;
+    margin-bottom: 25px;
+}
